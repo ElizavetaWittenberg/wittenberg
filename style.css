@@ -1,0 +1,118 @@
+*, *:before, *:after
+{
+    box-sizing: border-box;
+}
+
+.header
+{
+    background-image: url(./files/bg-1.png);
+    background-repeat: no-repeat;
+    background-position: top center;
+    background-size: cover;
+}
+
+.sub-header
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header > div > div
+{
+    padding-top: 3%;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+
+.content
+{
+    max-width: 1140px;
+    margin: auto;
+}
+
+.content > div
+{
+    display: flex;
+    justify-content: center;
+}
+
+.sub-content > div
+{
+    align-items: center;
+    border-radius: 0px;
+    border: 2px solid #000000;
+    padding: 3%;
+    margin-left: 1%;
+    margin-right: 1%;
+    margin-bottom: 5%;
+}
+
+p { text-align: center; }
+h3 { text-align: center; }
+h4 { text-align: center; }
+.resume { display: flex; justify-content: flex-end; }
+
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    margin-left: 1%;
+    margin-right: 1%;
+
+    background-image: url(./files/bg-3.png);
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    background-size: cover;
+}
+
+@media (max-width: 1200px)
+{
+    .content
+    {
+      max-width: 960px;
+    }
+
+    .sub-content > div > a > img
+    {
+        width: 384px;
+    }
+}
+
+@media (max-width: 992px)
+{
+    .content
+    {
+      max-width: 740px;
+    }
+
+    .sub-content > div > a > img
+    {
+        width: 296px;
+    }
+}
+
+  @media (max-width: 768px)
+  {
+    .content
+    {
+        max-width: 540px;
+    }
+
+    .sub-content > div > a > img
+    {
+        width: 216px;
+    }
+}
+
+@media (max-width: 578px)
+{
+    .content
+    {
+        width: 95%;
+    }
+
+    .sub-content > div > a > img
+    {
+        width: 33%;
+    }
+}
