@@ -19,12 +19,22 @@
     justify-content: space-between;
 }
 
+.logo > img
+{
+    max-width: 120px;
+}
+
 /* Это значит: для всех div, лежащих внутри div внутри объекта с классом header */
 .header > div > div
 {
     padding-top: 3%;
     padding-left: 3%;
     padding-right: 3%;
+}
+
+.header > div > h3
+{
+    color: #ffffff;
 }
 
 .content
@@ -49,24 +59,69 @@
     margin-bottom: 5%;
 }
 
+/* Оформление для разделов Сайты, Стиль и т.д.: */
 .left
 {
     text-align: left;
-    margin-left: 1%;
+    margin-left: 3%;
 }
 
 .tab
 {
     border-radius: 0px;
-    border: 2px solid #C0C0C0;
+    border: 2px solid #E7BCFF;
     padding: 1%;
     text-align: center;
 }
 
+.tab > p
+{
+    font-size: 14px;
+    color: #A8A7A5;
+}
+
 .tab > img
 {
-    width: 80%;
+    max-width: 80%;
 }
+
+.sub-tab
+{
+    display: flex;
+}
+
+.sub-tab > div
+{
+    text-align: center;
+    padding: 1%;
+}
+
+.tab-6
+{
+    border-radius: 0px;
+    border: 2px solid #E7BCFF;
+    padding: 1%;
+    text-align: center;
+}
+
+.tab-6 > p
+{
+    text-align: left;
+    margin-left: 3%;
+    font-size: 16px;
+    color:#000000;
+}
+
+.tab-6 > img
+{
+    max-width: 90%;
+}
+
+.tab-6 > h4
+{
+    margin-bottom: 0%;
+}
+/* Оформление для разделов Сайты, Стиль и т.д.: */
 
 /* .name это класс с именем name, p, div и т.д. это объекты p, div и т.д. */
 p { text-align: center; }
@@ -78,15 +133,15 @@ h4 { text-align: center; }
 {
     display: flex;
     justify-content: space-between;
-    margin-left: 1%;
-    margin-right: 1%;
-    margin-bottom: 2%;
 
     background-image: url(./files/bg-4.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
     padding-top: 5%;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
 }
 
 .bold
@@ -98,7 +153,10 @@ a:visited
     color: blue;
 }
 
-/* img { height: 85%; } */
+fieldset
+{
+    text-align: left;
+}
 
 @media (max-width: 1500px)
 {   /* Это свойство работает если размер экрана меньше 1500px */
@@ -114,7 +172,7 @@ a:visited
 
     .logo > img
     {
-        max-width: 64px;
+        max-width: 110px;
     }
 }
 
@@ -132,7 +190,7 @@ a:visited
 
     .logo > img
     {
-        max-width: 56px;
+        max-width: 100px;
     }
 }
 
@@ -148,9 +206,9 @@ a:visited
         width: 216px;
     }
 
-    .logo > img
+    .sub-tab
     {
-        max-width: 48px;
+        display: block;
     }
 }
 
@@ -164,11 +222,6 @@ a:visited
     .sub-content > div > a > img
     {
         width: 44%;
-    }
-
-    .logo > img
-    {
-        max-width: 32px;
     }
 
     .sub-content > div
