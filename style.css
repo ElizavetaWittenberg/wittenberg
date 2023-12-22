@@ -1,6 +1,7 @@
 *, *:before, *:after
 {   /* Для всех элементов и псевдоэлементов: */
     box-sizing: border-box;
+    font-family: 'Montserrat', sans-serif;
 }   /* Для того чтобы width и height не включали в себя отступы (margin) */
 
 .header
@@ -40,13 +41,31 @@
 
 .sub-content > div
 {
-    align-items: center;
     border-radius: 0px;
     border: 2px solid #000000;
     padding: 3%;
     margin-left: 1%;
     margin-right: 1%;
     margin-bottom: 5%;
+}
+
+.left
+{
+    text-align: left;
+    margin-left: 1%;
+}
+
+.tab
+{
+    border-radius: 0px;
+    border: 2px solid #C0C0C0;
+    padding: 1%;
+    text-align: center;
+}
+
+.tab > img
+{
+    width: 80%;
 }
 
 /* .name это класс с именем name, p, div и т.д. это объекты p, div и т.д. */
@@ -61,15 +80,28 @@ h4 { text-align: center; }
     justify-content: space-between;
     margin-left: 1%;
     margin-right: 1%;
+    margin-bottom: 2%;
 
     background-image: url(./files/bg-4.png);
     background-repeat: no-repeat;
     background-position: bottom center;
     background-size: cover;
+    padding-top: 5%;
 }
 
-@media (max-width: 1200px)
-{   /* Это свойство работает если размер экрана меньше 1200px */
+.bold
+{
+    font-weight: bold;
+}
+a:visited
+{
+    color: blue;
+}
+
+/* img { height: 85%; } */
+
+@media (max-width: 1500px)
+{   /* Это свойство работает если размер экрана меньше 1500px */
     .content
     {
         max-width: 960px;
@@ -78,6 +110,11 @@ h4 { text-align: center; }
     .sub-content > div > a > img
     {
         width: 384px;
+    }
+
+    .logo > img
+    {
+        max-width: 64px;
     }
 }
 
@@ -92,6 +129,11 @@ h4 { text-align: center; }
     {
         width: 296px;
     }
+
+    .logo > img
+    {
+        max-width: 56px;
+    }
 }
 
   @media (max-width: 768px)
@@ -105,6 +147,11 @@ h4 { text-align: center; }
     {
         width: 216px;
     }
+
+    .logo > img
+    {
+        max-width: 48px;
+    }
 }
 
 @media (max-width: 578px)
@@ -116,6 +163,19 @@ h4 { text-align: center; }
 
     .sub-content > div > a > img
     {
-        width: 33%;
+        width: 44%;
+    }
+
+    .logo > img
+    {
+        max-width: 32px;
+    }
+
+    .sub-content > div
+    {
+        display: flex;
+        align-items: center;
+        width: 45%;
+        margin-bottom: 3%;
     }
 }
