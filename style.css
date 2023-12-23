@@ -51,7 +51,7 @@
 
 .sub-content > div
 {
-    border-radius: 1px;
+    border-radius: 10px;
     border: 2px solid #f1d4fa;
     padding: 3%;
     margin-left: 1%;
@@ -68,7 +68,7 @@
 
 .tab
 {
-    border-radius: 1px;
+    border-radius: 10px;
     border: 2px solid #E7BCFF;
     padding: 4%;
     text-align: left;
@@ -98,7 +98,7 @@
 
 .tab-6
 {
-    border-radius: 1px;
+    border-radius: 10px;
     border: 2px solid #E7BCFF;
     padding: 1%;
     text-align: center;
